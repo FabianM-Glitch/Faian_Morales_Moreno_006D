@@ -32,6 +32,29 @@
     <ion-card-content class="contenido">
 
       <form #formulario="ngForm" (ngSubmit) ="onSubmit()">
+
+
+        <ion-item>
+          <ion-label>Nombre:</ion-label>
+          <ion-input type="text" name="nombre" placeholder="Ingresa tu nombre"
+                     minlength="1" maxlength="20" [(ngModel)]= "usuario.nombre"
+                     required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Edad</ion-label>
+          <ion-input type="text" name="edad" placeholder="Ingresa tu Edad"
+                     minlength="1" maxlength="3" [(ngModel)]= "usuario.edad"
+                     required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Nickname</ion-label>
+          <ion-input type="text" name="nick" placeholder="Ingresa tu Nickname"
+                     minlength="3" maxlength="20" [(ngModel)]= "usuario.nick"
+                     required>
+          </ion-input>
+        </ion-item>
     
         <ion-item>
           <ion-label>Email: </ion-label>
